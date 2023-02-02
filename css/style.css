@@ -59,6 +59,18 @@ main .home-section {
 
 }
 
+.projects-section{
+    border: 1px solid rgb(4, 0, 255);
+    text-align: center;
+
+}
+
+.services-section{
+    border: 1px solid rgb(4, 0, 255);
+    text-align: center;
+
+}
+
 .home-section, .about-section, .projects-section,
 .services-section, .hire-me-section{
     height: 100vh;
