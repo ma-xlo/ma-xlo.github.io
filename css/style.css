@@ -1,5 +1,7 @@
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 html {
     scroll-behavior: smooth;
@@ -9,6 +11,8 @@ body{
     height: 100vh;
     background-color: rgb(0, 0, 0);
     color: white;
+    background-color: rgb(16, 16, 16);
+
 }
 
 nav {
@@ -21,7 +25,7 @@ nav {
     background-color: rgb(0, 0, 0);
     position: fixed; 
     z-index: 1;
-    border: 1px solid rgb(0, 255, 4);
+    /* border: 1px solid rgb(0, 255, 4); */
     height: 100%;
     width: 100px;
 }
@@ -45,49 +49,96 @@ main {
     display: flex;
     flex-direction: column;
     margin-left: 100px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 main .home-section {
     padding: 188px 0 0 50px;
 
 }
+.home-section, .about-section, .projects-section,
+.services-section, .hire-me-section{
+    height: 100vh;
+}
 
 .about-section{
-    border: 1px solid rgb(4, 0, 255);
+    /* border: 1px solid rgb(4, 0, 255); */
     text-align: center;
 
 }
 
 .projects-section{
-    border: 1px solid rgb(4, 0, 255);
+    /* border: 1px solid rgb(4, 0, 255); */
     text-align: center;
 
 }
 
 .services-section{
-    border: 1px solid rgb(4, 0, 255);
+    /* border: 1px solid rgb(4, 0, 255); */
     text-align: center;
 
 }
 
 .hire-me-section {
     display: flex;
-    border: 1px solid rgb(4, 0, 255);
+    flex-wrap: wrap;
+    /* border: 1px solid rgb(4, 0, 255); */
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .form-container{
+    background-color: rgb(10, 10, 10);
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-radius: 5px;
+    /* border: 1px solid rgb(0, 255, 225); */
+    padding: 20px;
+    gap: 10px;
+    width: 340px;
+    flex-basis: 50%;
 
 }
 
-.home-section, .about-section, .projects-section,
-.services-section, .hire-me-section{
-    height: 100vh;
+.form-field input, button, textarea{
+    width: 100%;
+}
+
+.form-field input{
+    background-color: transparent;
+    color: white;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid rgb(255, 0, 200);
+    outline: none;
+    padding-left: 5px;
+}
+
+.form-field textarea{
+    background-color: #111;
+    color: white;
+    height: 130px;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: dashed;
+    resize: none;
+
+}
+
+.form-field button{
+    background-color: rgb(36, 155, 48);
+    color: #fff;
+    font-weight: 500;
+    border-radius: 5px;
+    height: 30px;
+    outline: none;
+    border: none;
+    
+
 }
 
 h1{
@@ -124,11 +175,11 @@ h1{
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #111111;
+    background: #000000;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -137,7 +188,16 @@ h1{
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #333;
+}
+
+nav img {
+    width: 90px;
+}
+
+nav img:hover {
+    filter: drop-shadow(0px 0px 10px #ffffff);
+
 }
 
 @media screen and (max-width: 480px) {
