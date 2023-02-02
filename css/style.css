@@ -45,7 +45,7 @@ main {
     display: flex;
     flex-direction: column;
     margin-left: 100px;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 main .home-section {
@@ -54,7 +54,7 @@ main .home-section {
 }
 
 .about-section{
-    /* border: 1px solid red; */
+    border: 1px solid rgb(4, 0, 255);
     text-align: center;
 
 }
