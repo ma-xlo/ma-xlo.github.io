@@ -71,14 +71,9 @@ main .home-section {
 
 }
 
-.home-section, .about-section, .projects-section,
-.services-section, .hire-me-section{
-    height: 100vh;
-}
-
-
 .hire-me-section {
     display: flex;
+    border: 1px solid rgb(157, 0, 255);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -88,6 +83,11 @@ main .home-section {
     display: flex;
     flex-direction: row;
 
+}
+
+.home-section, .about-section, .projects-section,
+.services-section, .hire-me-section{
+    height: 100vh;
 }
 
 h1{
