@@ -21,7 +21,7 @@ nav {
     background-color: rgb(0, 0, 0);
     position: fixed; 
     z-index: 1;
-    border: 1px solid rgb(0, 255, 4);
+    /* border: 1px solid rgb(0, 255, 4); */
     height: 100%;
     width: 100px;
 }
@@ -45,7 +45,7 @@ main {
     display: flex;
     flex-direction: column;
     margin-left: 100px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 main .home-section {
@@ -54,7 +54,7 @@ main .home-section {
 }
 
 .about-section{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     text-align: center;
 
 }
