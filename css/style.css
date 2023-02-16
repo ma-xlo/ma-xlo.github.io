@@ -11,7 +11,7 @@ body{
     height: 100vh;
     background-color: rgb(0, 0, 0);
     color: white;
-    background-color: rgb(16, 16, 16);
+    /* background-color: rgb(16, 16, 16); */
 
 }
 
@@ -56,6 +56,12 @@ main .home-section {
     padding: 188px 0 0 50px;
 
 }
+
+header{
+    /* border: 1px solid rgb(0, 166, 255); */
+
+}
+
 .home-section, .about-section, .projects-section,
 .services-section, .hire-me-section{
     height: 100vh;
@@ -67,10 +73,45 @@ main .home-section {
 
 }
 
-.projects-section{
-    /* border: 1px solid rgb(4, 0, 255); */
-    text-align: center;
+.projects-section, .services-section, .about-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 
+    padding: 30px;
+    /* border: 1px solid rgb(4, 0, 255); */
+
+}
+
+.projects-gallery{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    padding: 10px;
+    width: 90%;
+    height: 90%;
+    /* border: 1px solid rgb(55, 255, 0); */
+}
+.gallery-item{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    /* border: 1px solid rgb(255, 65, 65); */
+    width: 25%;
+}
+
+.gallery-item img{
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: cover;
 }
 
 .services-section{

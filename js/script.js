@@ -6,3 +6,5 @@ setInterval(() => {
     raised.classList.toggle("hide");
     weaving.classList.toggle("hide");
 }, 400);
+
+
