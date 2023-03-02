@@ -82,29 +82,30 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -40px;
-    padding: 0px 20px 20px 20px;
+    margin-top: -55px;
+    padding: 0px 25px 20px 20px;
     /* border: 1px solid rgb(0, 166, 255); */
-    filter: drop-shadow(0px -20px 20px #ffffff); 
+    filter: drop-shadow(0px -50px 40px #ffffff); 
 }
 
-.coffe-code img:hover {
-    filter: contrast(5);
+.coffe-code img{
+    width: 95%;
 }
 
-.separator {
-    border-right: 1px solid var(--border-color);
-    height: 220px;
+.coffe-code img {
+    filter: brightness(5);
 }
+
 .welcome-msg{
-    padding: 25px;
+    padding: 20px;
     height: 200px;
     font-family: 'Fira Code', monospace;
-    /* border: 1px solid rgb(0, 255, 225); */
+    border-left: 1px solid rgb(0, 255, 225);
+
 }
 
 .welcome-msg h1{
-    margin: 0;
+    margin: 0px;
     display: inline;
 }
 
