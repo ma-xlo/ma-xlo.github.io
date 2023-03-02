@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Home</title>
-    <link rel="icon" href="./src/img/logo.png">
 
 </head>
 <body id="home">
@@ -17,23 +16,54 @@
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#services">Services</a>
-        <a href="#hire-me">Hire Me!</a>
+        <a href="#contact">Contact</a>
         <div class="social-media">
             <a href="https://github.com/ma-xlo"><i class="fa fa-github"></i></a>
             <a href="https://www.linkedin.com/in/seacello"><i class="fa fa-linkedin-square"></i></a>
         </div>
     </nav>
     <main>
-        <div class="home-section" >
-            <div>
-                <h1><img class="hand-animation" style="width: 35px;" id="raised-hand"  src="./src/img/raised-hand_270b.png"><img style="width: 35px" id="weaving-hand" class="hide hand-animation" src="src/img/waving-hand_1f44b.png"> Hi,<br/>I'm Marcelo,<br/>Back-end developer</h1>
+        <section class="home-section" >
+            <a href="https://gist.github.com/ma-xlo/06b55d882aac0d554d48b3e4579bc9d2" alt="Caffeine" target="_blank">
+                <div class="coffe-code" align="center">
+                    <img src="./src/img/caffeine.gif" alt="">
+                </div>
+            </a>
+            <div class="separator"></div>
+            <div class="welcome-msg">
+                <h1>Hi,<br/>I'm Marcelo,<br/>Back-end developer</h1>
+                <span class="block-cursor" id="block-cursor">█</span>
             </div>
-        </div>
-        <div class="about-section" id="about">
-            <h1>About</h1>
-            <p>Student of Analysis and Systems Development at Federal Institute of the State of São Paulo and enthusiast in the art of programming.</p>
-        </div>
-        <div class="projects-section" id="projects">
+        </section>
+        <section class="about-section reveal" id="about">
+            <h1>About Me</h1>
+            <div class="about-me">
+                <div class="description">
+                    <p><img width="19px" src="./src/img/hi.gif" alt="" srcset=""> Hey, my name is Marcelo Correa, I'm a software developer with emphasis in web back-end.</p>
+                    <p>I'm currently  studying Analysis and Systems Development at Federal Institute of São Paulo, Brazil.</p>
+                    <h4>Here are a few technologies I’ve been working with recently: </h4>
+                    <table>
+                        <tr>
+                            <td><span class="arrow-decorator">➤</span> JavaScript (ES6+)</td>
+                            <td><span class="arrow-decorator">➤</span> Python</td>
+                        </tr>
+                        <tr>
+                            <td><span class="arrow-decorator">➤</span> Git</td>
+                            <td><span class="arrow-decorator">➤</span> C/C++</td>
+                        </tr>
+                        <tr>
+                            <td><span class="arrow-decorator">➤</span> Node.js</td>
+                            <td><span class="arrow-decorator">➤</span> HTML/CSS</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="photo-profile">
+                    <img src="src/img/me.jpg" alt="" srcset="">
+                </div>
+            </div>
+            <a target="_blank" href="./src/about/marcelo_correa_resume.pdf">🗎 Résumé</a>
+        </section>
+        <section class="projects-section reveal" id="projects">
             <header>
                 <h1>Projects</h1>
             </header>
@@ -53,6 +83,13 @@
                             <p>Command line interface version of one of the most popular puzzle games of all time.</p>
                         </div>
                     </a>
+                    <a class="card-item" href="https://github.com/ma-xlo/delorem" target="_blank">
+                        <img src="./src/img/delorem.png" alt=""/>
+                        <div class="card-details">
+                            <h1>Delorem</h1>
+                            <p>Lorem Ipsum generator with quotes of the movie Back To The Future.</p>
+                        </div>
+                    </a>
                     <a class="card-item" href="https://gist.github.com/ma-xlo/bf21e9a4e79f334206bfcd2e840e9759" target="_blank">
                         <img src="./src/img/carbon.png" alt="" />
                         <div class="card-details">
@@ -60,7 +97,7 @@
                             <p>C program that calculates the phi number</p>
                         </div>
                     </a>
-                    <a class="card-item" href="https://github.com/ma-xlo/bin2dec">
+                    <a class="card-item" href="https://github.com/ma-xlo/mini-wordle" target="_blank">
                         <img src="https://raw.githubusercontent.com/ma-xlo/mini-wordle/main/src/img/game-demo.gif" alt="" />
                         <div class="card-details">
                             <h1>Mini Wordle</h1>
@@ -74,19 +111,20 @@
                             <p>C program that calculate the first n terms of fiboonaci sequence</p>
                         </div>
                     </a>
-                    <a class="card-item" href="https://github.com/ma-xlo/bin2dec">
+                    <!---- <a class="card-item" href="https://github.com/ma-xlo/bin2dec">
                         <img src="https://raw.githubusercontent.com/ma-xlo/bin2dec/main/src/img/demo.GIF" alt="" target="_blank"/>
                         <div class="card-details">
                             <h1>Bin2Dec</h1>
                             <p>A simple tool that converts binary numbers to decimals.</p>
                         </div>
-                    </a>
+                    </a> ---->
                   </div>
                 </div>
             </div>
-        </div>
-        <div class="hire-me-section" id="hire-me">
-            <h1>Hire me!</h1>
+        </section>
+        <section class="contact-section reveal" id="contact">
+            <h1>Get in touch!</h1>
+            <!-- <p>Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p> -->
             <div class="form-container">
                     <div class="form-field">
                         <label for="name"></label>
@@ -100,14 +138,14 @@
 
                     <div class="form-field">
                         <label for="text-area"></label>
-                        <textarea name="" id="email-content" placeholder="How can I help you?"></textarea>
+                        <textarea name="" id="email-content" placeholder="Hello, world!"></textarea>
                     </div>
 
                     <div class="form-field">
                         <button id="send-btn">Send</button>
                     </div>
             </div>
-        </div>
+        </section>
     </main>
 
 
